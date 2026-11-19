@@ -1,0 +1,11 @@
+project: savantenvs/sslh
+target: fuzz_config
+
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_config @@
+    afl: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_config/testsuite

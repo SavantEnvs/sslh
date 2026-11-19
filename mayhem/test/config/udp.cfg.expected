@@ -1,0 +1,74 @@
+verbose: 3
+verbose_config: 0
+verbose_config_error: 3
+verbose_connections: 3
+verbose_connections_try: 0
+verbose_connections_error: 3
+verbose_fd: 0
+verbose_packets: 0
+verbose_probe_info: 0
+verbose_probe_error: 3
+verbose_system_error: 3
+verbose_int_error: 3
+version: 0
+foreground: 1
+inetd: 0
+numeric: 0
+transparent: 0
+timeout: 10
+udp_max_connections: 1024
+user: (null) <unset>
+pidfile: /tmp/sslh_test.pid
+chroot: (null) <unset>
+syslog_facility: auth
+logfile: (null) <unset>
+on_timeout: ssh
+prefix: 
+listen [1]:
+    host: localhost
+    port: 4443
+    max_connections: 0 <unset>
+    is_udp: 1
+    is_unix: 0
+    keepalive: 0
+    proxyprotocol: 0
+protocols [2]:
+    name: regex
+    host: ns1.rutschle.net
+    port: 53
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [1]:
+        0:	rutschle.net
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: anyprot
+    host: localhost
+    port: 9099
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>

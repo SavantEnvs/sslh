@@ -1,0 +1,345 @@
+verbose: 0
+verbose_config: 1
+verbose_config_error: 1
+verbose_connections: 1
+verbose_connections_try: 1
+verbose_connections_error: 1
+verbose_fd: 1
+verbose_packets: 1
+verbose_probe_info: 1
+verbose_probe_error: 1
+verbose_system_error: 1
+verbose_int_error: 1
+version: 0
+foreground: 1
+inetd: 0
+numeric: 1
+transparent: 0
+timeout: 10
+udp_max_connections: 1024
+user: (null) <unset>
+pidfile: /tmp/sslh_test.pid
+chroot: (null) <unset>
+syslog_facility: auth
+logfile: (null) <unset>
+on_timeout: ssh
+prefix: 
+listen [3]:
+    host: localhost
+    port: 8080
+    max_connections: 2
+    is_udp: 0
+    is_unix: 0
+    keepalive: 1
+    proxyprotocol: 1
+    host: localhost
+    port: 8081
+    max_connections: 0 <unset>
+    is_udp: 0
+    is_unix: 0
+    keepalive: 1
+    proxyprotocol: 0
+    host: /tmp/sslh.sock
+    port: 
+    max_connections: 0 <unset>
+    is_udp: 0
+    is_unix: 1
+    keepalive: 0
+    proxyprotocol: 0
+protocols [15]:
+    name: ssh
+    host: localhost
+    port: 9000
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 1
+    tfo_ok: 0
+    transparent: 1
+    resolve_on_forward: 1
+    log_level: 1
+    keepalive: 0
+    max_connections: 4
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: socks5
+    host: localhost
+    port: 9001
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: http
+    host: localhost
+    port: 80
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: tinc
+    host: localhost
+    port: 9003
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: openvpn
+    host: localhost
+    port: 9004
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: xmpp
+    host: localhost
+    port: 9009
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: adb
+    host: localhost
+    port: 9010
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: syslog
+    host: localhost
+    port: 9013
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: regex
+    host: localhost
+    port: 9011
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [2]:
+        0:	^foo
+        1:	^bar
+    minlength: 4
+    proxyprotocol: 0 <unset>
+    name: tls
+    host: localhost
+    port: 9021
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [1]:
+        0:	sni1
+    alpn_protocols [2]:
+        0:	alpn1
+        1:	alpn2
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: tls
+    host: localhost
+    port: 9022
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [2]:
+        0:	sni2
+        1:	sni3
+    alpn_protocols [2]:
+        0:	alpn1
+        1:	alpn2
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: tls
+    host: localhost
+    port: 9023
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [1]:
+        0:	alpn3
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: tls
+    host: localhost
+    port: 9024
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [1]:
+        0:	sni3
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: tls
+    host: localhost
+    port: 9025
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: anyprot
+    host: localhost
+    port: 9099
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>

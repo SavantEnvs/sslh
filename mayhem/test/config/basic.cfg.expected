@@ -1,0 +1,118 @@
+verbose: 0
+verbose_config: 0
+verbose_config_error: 3
+verbose_connections: 3
+verbose_connections_try: 0
+verbose_connections_error: 3
+verbose_fd: 0
+verbose_packets: 0
+verbose_probe_info: 0
+verbose_probe_error: 3
+verbose_system_error: 3
+verbose_int_error: 3
+version: 0
+foreground: 0
+inetd: 0
+numeric: 0
+transparent: 0
+timeout: 2
+udp_max_connections: 1024
+user: nobody
+pidfile: /var/run/sslh.pid
+chroot: (null) <unset>
+syslog_facility: auth
+logfile: (null) <unset>
+on_timeout: ssh
+prefix: 
+listen [2]:
+    host: 0.0.0.0
+    port: 443
+    max_connections: 0 <unset>
+    is_udp: 0
+    is_unix: 0
+    keepalive: 0
+    proxyprotocol: 0
+    host: [::]
+    port: 443
+    max_connections: 0 <unset>
+    is_udp: 0
+    is_unix: 0
+    keepalive: 0
+    proxyprotocol: 0
+protocols [4]:
+    name: ssh
+    host: localhost
+    port: 22
+    service: ssh
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 1
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: openvpn
+    host: localhost
+    port: 1194
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: tls
+    host: localhost
+    port: 443
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 0
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
+    name: anyprot
+    host: localhost
+    port: 443
+    service: (null) <unset>
+    is_unix: 0
+    is_udp: 0
+    udp_timeout: 60
+    fork: 0
+    tfo_ok: 0
+    transparent: 0
+    resolve_on_forward: 0
+    log_level: 1
+    keepalive: 0
+    max_connections: 0 <unset>
+    sni_hostnames [0]:
+    alpn_protocols [0]:
+    regex_patterns [0]:
+    minlength: 0 <unset>
+    proxyprotocol: 0 <unset>
